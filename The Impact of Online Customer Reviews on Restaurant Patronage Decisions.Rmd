@@ -1,0 +1,946 @@
+---
+title: "The Impact of Online Customer Reviews on Restaurant Patronage Decisions"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment="", warning = FALSE, message = FALSE, tidy.opts=list(width.cutoff=55), tidy = TRUE)
+```
+
+## Part 1:  Research Proposal
+
+### Executive Summary / Abstract
+
+ 
+The introduction of online customer reviews has had a major impact on the restaurant industry's recent change. Yelp, TripAdvisor, and Google Reviews are just a few of the digital-age platforms that have proven indispensable in helping consumers make dining decisions. Though these internet evaluations are becoming more and more influential, there is still a great deal of uncertainty about how exactly these reviews affect restaurant patronage decisions and what tactics restaurants might use to take advantage of this trend.
+ 
+Our study seeks to address this gap by exploring key questions: How do star ratings influence customer choices? Are written comments about food and service more impactful? What is the effect of reviews featuring photos and menus? Addressing these uncertainties is crucial for restaurant owners and managers striving to optimize their use of online reviews.
+ 
+The proposed research will investigate the correlation between various aspects of online reviews and the likelihood of customers visiting restaurants. We aim to quantify the impact of star ratings, written reviews, and visual content in these reviews on customer visitation scores. Through this study, we intend to provide actionable insights that can guide restaurants in enhancing their online presence and reputation, ultimately leading to increased customer patronage.
+ 
+This research holds significant importance for the strategic growth of individual restaurants, but it also has wider implications for comprehending consumer behavior in the digital realm. Industry stakeholders are cordially invited to collaborate with us in order to add varied viewpoints and useful insights to this study. Together, we can provide you with the knowledge you need to effectively navigate the rapidly changing digital marketplace and strengthen your position as a leader in the restaurant business.
+ 
+We look forward to the opportunity to collaborate on this venture, aiming to empower the restaurant community with data-driven strategies for success in the ever-changing digital age.
+
+
+
+### Statement of the Problem
+
+The restaurant industry, in the wake of digitalization, faces a critical challenge: understanding and leveraging the impact of online customer reviews on patronage decisions. While platforms like Yelp, TripAdvisor, and Google Reviews have become pivotal in shaping dining choices, there remains a significant gap in comprehensively understanding how different elements of these reviews influence customer behavior.
+ 
+The core of the problem lies in the ambiguity surrounding the influence of various aspects of online reviews. Key questions include: To what extent do star ratings sway customer decisions? Are textual evaluations about food quality and service more influential in guiding patronage? Furthermore, the role of in-depth visual content, such as photos and menus, in these reviews is yet another domain mired in uncertainty. This lack of clarity poses a substantial challenge for restaurant owners and managers who wish to effectively harness the power of online reviews to attract and retain customers.
+ 
+For restaurants looking to fully capitalize on internet evaluations and understand their influence on patronage, it is imperative to unravel these complexities. This involves not only assessing how different review elements impact customer choices but also understanding the nuances of customer interaction with these digital platforms. The restaurants need to navigate through this uncertainty to improve their online reputation and, in turn, attract more customers.
+ 
+This study aims to analyze the multifaceted impact of online customer reviews, offering clarity and insight into an area that is rapidly shaping the dynamics of the restaurant industry. By addressing these uncertainties, the study seeks to empower restaurant owners and managers with strategic knowledge to enhance their online presence, then driving growth and success in an increasingly digital marketplace.
+ 
+The outcome of this research has the potential to significantly influence business strategies, guiding restaurant owners in optimizing their engagement with customers through digital platforms. Understanding the specific factors of customer decisions based on online reviews will enable restaurants to develop their marketing and operational strategies more effectively, and enhance customer satisfaction and increase restaurants’ performance.
+
+
+### Literature Review
+
+“Reviews, reputation, and revenue: the case of Yelp.Com. Social Science Research Network.”
+
+In the new age of digitalization, online customer reviews have become the benchmark every consumer focuses on before consuming. Particularly in the hotel and restaurant industries, which rely on their reputation and word-of-mouth, this shift has had a potentially significant impact on them. Quantitatively, Luca's research demonstrates the magnitude of the problem, with Yelp ratings not adding a single star, bringing in an additional 5-9% in restaurant revenue (Luca, 2011). This data underscores the significant impact that online reputation has on restaurant revenue. Luca's research notes that chain restaurants are primarily unaffected by Yelp ratings, but independent restaurants receive a considerable impact from ratings (Luca, 2011). Chain restaurants often rely on advertising, expert reviews, and multiple stores to build their reputation. The potential for improvement in the restaurant industry is enormous. For example, understanding that consumers rely on ratings can lead restaurants to develop online engagement strategies (Luca, 2011). Luca's research focuses on Yelp reviews. However, we can also extrapolate from the findings to delve deeper into our topic regarding potential moderators, such as culinary type, location, or food price. Luca's article provides a basic understanding of the quantifiable impact of online reviews on restaurant finances and consumer behavior. We can eventually draw on her methodology and compare our results with hers.
+ 
+ 
+“The effect of online reviews on restaurant visit intentions: Applying signaling and involvement theories”
+
+In recent years, online interactions have played a pivotal role in determining restaurant popularity, particularly in the wake of the COVID-19 pandemic. A study conducted by Aureliano-Silva, Leung, and Spers (2021) aimed to investigate the impact of different types of reviews on restaurant visit intentions, focusing on emotional and functional reviews. Emotional reviews emphasized relatable aspects and included emojis, while functional reviews focused on service-related factors.
+
+The study, based in São Paulo, Brazil, included 123 participants and categorized them into four groups: high rating/functional, high rating/emotional, low rating/functional, and low rating/emotional scenarios. Participants were assessed based on their intentions to visit a restaurant, given the information provided.
+
+Results revealed that when a restaurant had a low rating, emotional reviews significantly increased the intention to visit, scoring nearly 1 point higher on a 1-7 scale. However, for restaurants with higher ratings, the impact of emotional reviews was minimal (Aureliano-Silva, 2021).
+
+This research by Aureliano-Silva, Leung, and Spers sheds light on the positive influence of reviews on restaurant visitation. It also paves the way for exploring the effects of different types of reviews, including those with images, as well as the potential negative impacts of reviews on restaurant reputation and customer engagement.
+
+
+
+### Research Questions, Hypotheses, and Effects
+
+#### Research Questions:
+
+##### Research Question 1: Does a restaurant with a higher star rating, compared to one with a lower rating, increase a customer’s visitation score? 
+
+The dependent variable will be the visitation score on a scale from 1-100 of customers to visit a restaurant. The independent variable is whether the restaurant is higher-rated or lower-rated.
+
+Null hypothesis: There is no difference between the mean of visitation scores between higher-rated restaurants and lower-rated restaurants. 
+
+Alternative hypothesis: There is a difference between the mean of visitation scores between higher-rated restaurants and lower-rated restaurants. 
+
+Suggested effect size: The smallest change in the visitation score would be 20 in a scale of 1-100, it would be considered as a meaningful improvement for online customer reviews.
+
+
+
+##### Research Question 2: Do positive online reviews of the restaurant’s food, compared to no review, increase a customer’s visitation score?
+
+The dependent variable will be the visitation score on a scale from 1-100 of customers to visit a restaurant, the independent variable is whether the restaurant has a positive online review on food.
+
+Null hypothesis: There is no difference between the mean of visitation scores between the restaurants with positive online reviews on food and  the restaurants without positive online reviews on food. 
+
+Alternative hypothesis: There is a difference between the mean of visitation scores between the restaurants with positive online reviews on food and  the restaurants without positive online reviews on food. 
+
+Suggested effect size: The smallest change in the visitation score would be 15 in a scale of 1-100, it would be considered as a meaningful improvement for online customer reviews.
+
+
+
+##### Research Question 3: Does the presence of high-quality food images, compared to no images, increase a customer’s visitation score?
+
+The dependent variable will be the visitation score on a scale from 1-100 of customers to visit a restaurant, the independent variable is whether the restaurant’s customer review has food images or does not have any food images.
+
+Null hypothesis: There is no difference in mean of  the customers’ visitation score between presence of food images and absence of that.
+
+Alternative hypothesis: There is a difference in mean of the customers’ visitation score between presence of food images and absence of that.
+
+Suggested effect size: The smallest change in the visitation score would be 10 in a scale of 1-100, it would be considered as a meaningful improvement for online customer reviews.
+
+
+
+### Importance of the Study and Social Impact
+
+Online customer reviews are critical to how they influence restaurant decisions, providing insights into modern consumer behavior and the ever-changing dynamics of the restaurant industry. Online reviews have changed the way consumers make decisions. This research is vital for restaurant owners and marketers to provide strategic guidance in their online reputation and management. At the same time, this study can provide consumers with new knowledge regarding digital marketing and the digital economy. In addition to the business implications, this study has far-reaching social implications, especially regarding empowering consumers. By emphasizing the impact of online reviews, it helps consumers to have an essential voice in business. This approach has led to a more customer-centric approach to business, prioritizing quality and customer satisfaction. The economic significance of this research is also significant, boosting local employment and economic activity through more stable business operations resulting from a deeper understanding of online reviews. This illustrates the broader impact of consumer behavior. In terms of increasing digital economy literacy, the study is essential in educating consumers and business owners to navigate the digital environment effectively and ethically. Finally, the potential impact on policy development is also significant, particularly in regulating online platforms and protecting consumer rights. Understanding the impact of online reviews can inform policies that promote transparency and fairness in the digital space, ensuring an ethical digital ecosystem. In summary, this line of research provides valuable insights for business and academia. It has more profound implications for the social and cultural understanding that shapes how we interact with the digital world and its impact on consumer behavior and business practices.
+
+
+### Research Plan 
+
+#### Population of Interest
+
+The population of interest for this research comprises individuals who make restaurant patronage decisions, encompassing both frequent diners and occasional visitors. The study aims to capture a diverse range of potential restaurant customers, and should be considering various demographic characteristics such as age, income, and location. 
+
+
+#### Sample Selection
+
+For both scenarios for each research question, we employed a sample size of 60 and randomly selected participants to be placed into 2 equally sized (30 each) groups: treatment and control. This division is designed to provide a balanced comparison between the groups for each research scenario.The sample size of 60 participants for each scenario is chosen in order to balance the need for statistical robustness with practical considerations. This number allows for a detailed analysis while remaining feasible in terms of resource allocation for data collection and analysis. Additionally, the sample size is sufficiently large to provide meaningful insights while small enough to ensure manageability in a simulated experimental setting.
+
+A stratified random sampling method was employed in the simulations. This method involves dividing the population into subgroups as strata based on demographic characteristics such as gender, age, race, income, and location. A random sample will then be selected from each stratum. This approach aims to achieve a well-balanced representation across different customer segments, ensuring that the study accounts for the diversity within the population of interest and avoiding bias within specific subgroups. 
+
+
+#### Operational Procedures
+
+The first step in the operational procedures is the creation of a comprehensive survey questionnaire. The questionnaire aims to collect information on participants' restaurant patronage decisions, preferences, and perceptions. Key elements of the questionnaire include:
+
+1）Demographic Information:
+Participants will be asked to provide demographic details such as age, gender, race, income, and geographical location. This information is crucial for stratified sampling and for understanding potential variations in responses across different segments of the population.
+
+2) Hypothetical Restaurant Profiles:
+Next, 6 hypothetical restaurant profiles will be constructed pertaining to each research question:
+For research question 1: The treatment group will be given a profile of restaurant 1 with specified cuisine, along with a high star rating of the restaurant. The control group will see the profile of restaurant 2 with the same cuisine but without a high star rating. 
+
+For research question 2: The treatment group will see the profile of restaurant 3, its cuisine, and a positive food review. The control group will be presented with a profile of restaurant 4 with just the name and cuisine.
+
+For research question 3: The treatment group will be presented with restaurant profile 5 with the name of the restaurant, cuisine, and a tasty looking picture of the food. The control group will be presented with restaurant profile 6 with just the name and cuisine. 
+
+3) Visitation score:
+The core of the questionnaire involves asking for the participants’ opinion on their intentions of visiting the restaurant after seeing the mock restaurant profiles. After each profile, participants will be asked to provide a visitation score ranging from 1-100, with 1 being “no intention to visit” and 100 being “strong intention to visit”,  providing a quantifiable measure of participants' intentions regarding restaurant patronage.
+
+
+#### Brief Schedule
+
+Week 1- Project Planning
+Design research questions, objectives and hypotheses. Conduct comprehensive literature review to identify relevant theories, existing research and gaps in current knowledge. Finalize research design, sampling strategy and operational procedures. 
+
+Week 2 - Survey questionnaire development
+Draft the survey questionnaire and share it with colleagues or experts for feedback and refinement
+
+Week 3 - Preparation for data collection
+Set up google forms and create the online survey, ensuring user-friendly navigation. Develop a distribution plan to identify the social media platforms and email list. Finalize the informed consent statement for participants.
+
+Week 4-5 - Data Collection
+Launching the source through selected social media platforms and email lists. Regularly check response rates and engagement, make sure that the targeted number of samples is reached.
+
+Week 6: Data Analysis
+Clean and organize the collected data, also addressing inconsistencies and missing information. Using correlation and regression statistical analyses to explore relationships between variables. 
+
+
+#### Data Collection
+
+Our data will be collected through Google Form distributed via various platforms such as social media, restaurant review websites and emails. The survey will include questions about their dining habits, frequency of dining out, and demographic information which includes their geographical locations, age groups, and income levels. Several advantage using this form of data collection includes:
+
+Accessibility:
+Google Forms can be easily accessed by participants through various platforms, including desktops, laptops, tablets, and smartphones. This ensures broad accessibility and participation.
+User-Friendly Interface:
+
+Friendly user interface:
+Google Forms provides a user-friendly interface for survey respondents, facilitating ease of navigation and completion. This is particularly important to encourage participation and accurate responses.
+
+Distribution Channels:
+The survey will be distributed through multiple channels to reach a diverse audience. Social media platforms, restaurant review websites, and email distribution lists will be utilized to maximize the survey's exposure.
+
+Informed Consent:
+Participants will be provided with an informed consent statement at the beginning of the survey. This statement will clearly outline the purpose of the study, the types of information collected, and the assurance of participant confidentiality. Participants will have the option to consent before proceeding with the survey.
+
+
+#### Data Security
+
+Informed Consent: The informed consent statement provided to participants will explicitly detail how their data will be stored and used, reassuring them of the confidentiality measures in place. Participants will be informed that their data will be anonymized, and any identifying information will be kept separate from survey responses.
+Limited Access: The data will be limited to essential team members directly involved in the research project. 
+
+
+#### Variables
+
+##### Outcomes (Dependent Variables)
+
+The dependent variables in this research are the participants' perceptions of the restaurants which will be measured by the visitation score on a scale of 1-100. With 1 indicating a low intention to visit and 100 indicating a strong intention to visit. The aim is to understand how different combinations of ratings and reviews influence customer perceptions and decisions regarding restaurant patronage.
+
+##### Treatments (Independent Variables)
+
+The independent variables in this study are the scenarios of restaurants presented to participants. These scenarios will vary in terms of different combinations of ratings, reviews and pictures. For research question 1, since we are interested in investigating the relationship between high star ratings and visitation score, the control group will not be presented with a restaurant profile with high star ratings while the treatment group will. For research question 2, as we are interested in examining whether positive food review will affect visitation score, the treatment group will see a restaurant profile with positive food review while the control group will not. For research question 3, because we are interested in knowing how high quality food pictures affect the visitation score, the treatment group will be presented with a restaurant profile with an attractive picture of the food while the control group will not receive one. For each treatment and control group, the restaurant profile they see will have the same type of cuisine. 
+
+##### Other Variables
+
+The variables that we are interested in investigating but are not taken into account in our statistical analysis would be the demographic information of the participants, which includes their age, gender, race, income level and location. These factors may also impact customers’ decision on whether or not they would like to visit a restaurant.
+
+
+### Statistical Analysis Plan  
+
+In our upcoming study, we aim to dive into the crucial topic of how online restaurant reviews influence patron decisions. To accomplish this, we've developed a detailed and systematic statistical analysis approach, utilizing R as our primary tool for data analysis.
+
+First, we will create a simulated dataset by grouping restaurants into 'High Rating' and 'Low Rating' categories, reflecting real-world situations. The creation of a controlled setting to test our theories depends heavily on this simulation. We will compare these two groups and specifically look at the probability that customers will visit these restaurants as the main focus of our investigation. Our objective is to utilize strong statistical techniques to examine fluctuations in visiting probability, so making sure that our findings are supported by trustworthy information.
+
+The independent samples t-test, which is suitable for comparing means between the 'High Rating' and 'Low Rating' groups, is crucial to our investigation. Our goal is to determine whether there is a statistically significant variation in the likelihood of customer visitation between these groups. The t-test will allow us to determine not only the presence but also the magnitude of a difference.
+
+The two-sample t-test is a statistical method used to determine if there is a significant difference between the means of two independent groups. It assumes that the data in each group should be approximately normally distributed, and the variances of the two groups should be equal. The null hypothesis states that there is no significant difference between the means of the two groups. It looks at the likelihood of getting the observed differences if there's no actual difference. A small p-value (less than 0.05) means we can reject the idea that there's no difference. If the p-value is higher, we don't have enough evidence to say there's a significant difference. 
+
+To bolster the credibility of our findings, we plan to conduct a simulation study. This involves simulating our experiment multiple times to test the consistency of our results across various scenarios. The importance of this simulation study cannot be overstated, as it helps ensure that our findings are not merely a product of random chance and validates the robustness of our conclusions.
+
+Post-simulation, we will engage in a comprehensive analysis of the data. Our focus will be on determining the frequency of statistically significant outcomes across our experiments and summarizing the effect sizes observed. This step is crucial for presenting a holistic view of the potential impact of online ratings on customer visitation.
+
+Additionally, we plan to calculate the 95% confidence interval for the observed effect sizes. This calculation will provide us with a range within which the true effect likely lies, thereby enhancing the statistical rigor of our analysis.
+
+Lastly, error rate exploration is a key component of our plan. By calculating the rates of true positives, true negatives, false positives, and false negatives, we aim to assess the accuracy of our test in identifying true effects. This error rate analysis is integral to understanding the precision and potential limitations of our statistical methodology.
+
+In conclusion, our statistical analysis plan is designed to offer a comprehensive and reliable exploration of the relationship between online reviews and restaurant patronage. By integrating rigorous statistical testing, robust simulation techniques, and thorough error rate analysis, we aim to ensure that our findings are not only statistically valid but also practically significant. This plan sets the stage for a detailed and insightful investigation, poised to make substantial contributions to the fields of consumer behavior and restaurant marketing.
+
+
+### Sample Size and Statistical Power
+
+```{r}
+library(pwr)
+n_q1 <- pwr.t.test(d = 1, sig.level = 0.05, type = "two.sample", power = 0.95)
+n_q2 <- pwr.t.test(d = 0.8, sig.level = 0.05, type = "two.sample", power = 0.85)
+n_q3 <- pwr.t.test(d = 1, sig.level = 0.05, type = "two.sample", power = 0.95)
+n_q1
+n_q2
+n_q3
+```
+
+To ensure that the study has sufficient sample size to detect meaning effects, given the complexity of collecting and analyzing online customer reviews, a sample size of 60 participants will be considered for all the research questions. Firstly, a larger sample size would provide more statistical power, which allows us to determine if there is a relationship between the dependent and independent variables. In further studies, we can conduct power analysis to determine the minimum sample size needed to detect an effect of a given sample size with a specific degree of confidence. Secondly, the precision of estimates also improves along with the increase in sample size, leading to a narrower confidence interval around the study findings. Thirdly, considering the resource constraints, a sample is reasonable as collecting and analyzing data from a larger number of participants can be resource intensive in terms of time, personnel and financial resources.
+
+To ensure that the study has sufficient sample size to detect meaning effects, given the complexity of collecting and analyzing online customer reviews, a sample size of 60 participants will be considered. This size is chosen mainly due to three reasons: Firstly, a larger sample size would provide more statistical power, which allows us to determine if there is a relationship between the dependent and independent variables. Secondly, the precision of estimates also improves along with the increase in sample size, leading to a narrower confidence interval around the study findings. Thirdly, considering the resource constraints, a sample is reasonable as collecting and analyzing data from a larger number of participants can be resource intensive in terms of time, personnel and financial resources. Therefore, a sample size of 60 is perceived as a good balance between achieving reliability, comprehensiveness and practicality. 
+
+For Q1, based on previous literature, we believe that the effect size and power of the experiment should be very high. We predict a difference in mean visitation score of 20 between the treatment and control groups. With a standard deviation of 20, we assume the effect size using Cohen’s d to be 1. Using this along with an assumed power of 95%, we conducted a pwr.t.test analysis and found that a minimum sample size of 27 participants must be reached to achieve the aforementioned parameters. 
+
+For Q2, we predict a difference in mean visitation score of 16. Using the same standard deviation of 20, we get an effect size using Cohen’s d of 0.8. As the effect is not as drastic as Q1, we assume a slightly lower power of 0.85. Based on these parameters, we recommend a minimum sample size of at least 30 participants.
+
+As we believe the effect size of Q3 will be virtually identical to that of Q1, we use the same parameters to determine the minimum sample size of 27 participants.
+
+
+
+### Possible Recommendations 
+
+Research Question 1: Impact of Star Ratings on Customer Visitation Scores
+
+Understanding the impact of star ratings on customer visitation scores is critical in the fast-paced restaurant industry. If the study finds that star ratings have no substantial impact on these scores (i.e., the null hypothesis holds), it implies that characteristics other than online ratings, such as location, menu diversity, and distinctive eating experiences, may be more important in drawing customers. Restaurants should consider emphasizing these characteristics more. This result also opens up possibilities for additional research to determine what particularly influences customer selections beyond star ratings. 
+If, on the other hand, higher star ratings are proven to significantly improve customer visitation scores (rejecting the null hypothesis), this would have important consequences for how restaurants approach online presence. This finding emphasizes the need of maintaining high star ratings and constantly connecting with clients online. Future research could look into which components of star ratings are most important to customers, assisting in the development of more successful tactics for online reputation management.
+Research Question 2: Role of Positive Online Reviews on Food in Customer Visitation Scores
+
+It is essential to investigate the impact of favorable online evaluations on food. If these reviews do not have a substantial impact on customer visitation scores (null hypothesis is not rejected), it suggests that customers evaluate a range of variables when selecting a restaurant. In this case, restaurants may need to implement larger customer-attraction methods, such as innovative marketing campaigns, improving the eating experience, or using numerous customer engagement platforms. More research might be conducted to investigate how customers use numerous sources of information, including reviews, into their decision-making process.
+If favorable online restaurant evaluations are discovered to play a substantial effect in improving visitation ratings (rejecting the null hypothesis), it emphasizes the importance of excellent food quality and service in generating positive feedback. Restaurants should prioritize these areas to encourage positive feedback. More research might be conducted to determine whether precise parts in evaluations (for example, mentions of signature dishes or service quality) are most influential in increasing customer visitation scores.
+Research Question 3: Influence of High-Quality Food Images on Customer Visitation Scores
+
+The third question investigates if high-quality food photographs in customer reviews influence visitation rates. If no significant impact is discovered (the null hypothesis holds), this suggests that other factors may be more influential in gaining customers. Restaurants may therefore need to consider different techniques, such as engaging social media campaigns, developing unique dining experiences, or stressing other areas of their internet presence. This also suggests that additional research is needed to understand many aspects of digital marketing and client appeal beyond visual images.
+If, on the other hand, the existence of high-quality food photographs is shown to significantly increase visitation scores (rejecting the null hypothesis), the recommendation shifts to investing in professional photography to improve web profiles. This discovery would also encourage more research into what types of food photographs are most effective (e.g., dish close-ups, ambiance shots) and how they may be used to attract new customers.
+These recommendations and future research initiatives should be presented in the perspective of the growing digital landscape in customer behavior and the restaurant sector in all scenarios. This method assures that the conclusions are not only theoretically solid, but also practically useful, assisting restaurant owners and marketers in successfully navigating the digital realm of client involvement.
+
+
+
+
+### Limitations and Uncertainties
+
+There are also possible limitations in this research. The research assumes that all reviews have equal weight. However, variations in the quality, authenticity, and relevance of reviews may impact the overall influence on patronage decisions. It will probably create selection bias. The study might encounter response bias if the sample primarily consists of individuals who are already inclined to leave online reviews. This could skew the findings and not represent the broader population. Under some circumstances, people might respond in a socially acceptable way rather than providing their true opinions.
+
+Other than selection bias and response bias, the relationship of causality and correlation is challenging to define while establishing a causal relationship between reading reviews and deciding to visit new restaurants. The decision of visiting a restaurant could be influenced by multiple factors, such as cultural & demographic differences, economic conditions, and personal health issues (like allergies). It is complex to isolate the impact of reviews into different factors.
+
+We should also consider the complexity of Decision-Making. Restaurant choices involve multifaceted decision-making. Online reviews are just one aspect, and factors like location, ambiance, and personal preferences may play significant roles not fully accounted for in the research. Some external factors such as marketing campaigns, promotions, or word-of-mouth recommendations, that might influence patronage decisions independently of online reviews, potentially confounding the study's findings. Those factors can be considered as further investigation for future research. 
+
+
+
+## Part 2:  Simulated Studies
+
+### Research Question 1: Does a restaurant with a higher star rating, compared to one with a lower rating, increase a customer’s visitation score?
+
+#### Scenario 1:  No Effect
+
+##### Simulation
+
+```{r q1_scenario1_simulation}
+
+n <- 60
+library(data.table)
+library(DT)
+library(rstatix)
+set.seed(1031)
+
+effect_size <- 0
+
+data <- data.table(Group = sample(x = c("High Rating", "Low Rating"), size = n, replace = T))
+
+data[Group == "High Rating", likelihood_to_visit := pmax(1, pmin(100, round(rnorm(n = .N, mean = 50, sd = 20), digits = 2)))]
+data[Group == "Low Rating", likelihood_to_visit := pmax(1, pmin(100, round(rnorm(n = .N, mean = 50, sd = 20), digits = 2)))]
+
+datatable(data = data)
+```
+
+##### Analysis
+
+
+
+```{r q1_scenario1_analysis}
+analyze.experiment <- function(the.dat) {
+    require(data.table)
+    setDT(the.dat)
+
+    the.test <- t.test(x = the.dat[Group == "High Rating",likelihood_to_visit], y = the.dat[Group == "Low Rating", likelihood_to_visit], alternative = 'greater')
+    
+    the.effect <- the.test$estimate[1] - the.test$estimate[2]
+    p <- the.test$p.value
+
+    result <- data.table(effect = the.effect, p = p)
+
+    return(result)
+}
+analyze.experiment(the.dat = data)
+```
+
+
+```{r}
+B <- 1000
+n <- 60
+RNGversion(vstr = 3.6)
+set.seed(seed = 1031)
+Experiment <- 1:B
+Group <- sample(x = c("High Rating", "Low Rating"), size = n, replace = T)
+
+sim.dat <- as.data.table(expand.grid(Experiment = Experiment, Group = Group))
+setorderv(x = sim.dat, cols = c("Experiment", "Group"), order = c(1,1))
+sim.dat[Group == "High Rating", likelihood_to_visit := pmax(1, pmin(100, round(rnorm(n = .N, mean = 50, sd = 20), digits = 2)))]
+sim.dat[Group == "Low Rating", likelihood_to_visit := pmax(1, pmin(100, round(rnorm(n = .N, mean = 50, sd = 20), digits = 2)))]
+dim(sim.dat)
+```
+
+```{r}
+exp.results <- sim.dat[, analyze.experiment(the.dat = .SD),
+    keyby = "Experiment"]
+
+DT::datatable(data = round(x = exp.results[1:500, ], digits = 3),
+    rownames = F)
+
+```
+
+```{r}
+exp.results[, mean(p < 0.05)]
+exp.results[, summary(effect)]
+```
+
+
+```{r}
+alpha = 0.05
+exp.results[, quantile(x = effect, probs = c(alpha/2, 1 -
+    alpha/2))]
+```
+
+```{r}
+alpha <- 0.05
+
+exp.results[, classification := ifelse(p < alpha, "Significant", "Not Significant")]
+
+conf_matrix <- table(exp.results$classification, abs(exp.results$effect) > 13)
+
+TP <- conf_matrix[4]
+TN <- conf_matrix[1]
+FP <- conf_matrix[3]
+FN <- conf_matrix[2]
+
+TPR <- TP / (TP + FN)  # True Positive Rate
+TNR <- TN / (TN + FP)  # True Negative Rate 
+FPR <- FP / (FP + TN)  # False Positive Rate
+FNR <- FN / (TP + FN)  # False Negative Rate
+
+TPR
+TNR
+FPR
+FNR
+```
+
+Scenario 1 of Research Question 1 analyzes the effect of a restaurant's star rating on the likelihood of patronage. We simulated two groups, "high ratings" and "low ratings," each with 60 samples, and both groups had the same mean. likehood_to_visit scores were restricted to between 1 and 100. A t-test was conducted to compare the mean likehood_to_visit scores of the two groups. The results show that star ratings do not significantly affect the likelihood of visiting, with a p-value substantially more significant than the threshold of 0.05. TPR and TNR show that the simulation can identify the absence of effects most of the time but is not successful in detecting the actual presence of products. Thus, this scenario suggests no significant difference in the likelihood of patronage based on a restaurant's star rating.
+
+#### Scenario 2:  An Expected Effect
+
+
+##### Simulation
+
+```{r}
+n <- 60
+library(data.table)
+library(DT)
+library(rstatix)
+set.seed(1031)
+
+effect_size <- 20
+
+data <- data.table(Group = sample(x = c("High Rating", "Low Rating"), size = n, replace = T))
+
+data[Group == "High Rating", likelihood_to_visit := pmax(1, pmin(100, round(rnorm(n = .N, mean = 50 + effect_size, sd = 20), digits = 2)))]
+data[Group == "Low Rating", likelihood_to_visit := pmax(1, pmin(100, round(rnorm(n = .N, mean = 50, sd = 20), digits = 2)))]
+
+datatable(data = data)
+
+```
+
+
+##### Analysis
+
+```{r}
+analyze.experiment <- function(the.dat) {
+    require(data.table)
+    setDT(the.dat)
+
+    the.test <- t.test(x = the.dat[Group == "High Rating",likelihood_to_visit], y = the.dat[Group == "Low Rating", likelihood_to_visit])
+    
+    the.effect <- the.test$estimate[1] - the.test$estimate[2]
+    p <- the.test$p.value
+
+    result <- data.table(effect = the.effect, p = p)
+
+    return(result)
+}
+analyze.experiment(the.dat = data)
+```
+
+```{r}
+B <- 1000
+n <- 60
+RNGversion(vstr = 3.6)
+set.seed(seed = 1031)
+Experiment <- 1:B
+Group <- sample(x = c("High Rating", "Low Rating"), size = n, replace = T)
+
+sim.dat <- as.data.table(expand.grid(Experiment = Experiment, Group = Group))
+setorderv(x = sim.dat, cols = c("Experiment", "Group"), order = c(1,1))
+sim.dat[Group == "High Rating", likelihood_to_visit := pmax(1, pmin(100, round(rnorm(n = .N, mean = 50 + effect_size, sd = 20), digits = 2)))]
+sim.dat[Group == "Low Rating", likelihood_to_visit := pmax(1, pmin(100, round(rnorm(n = .N, mean = 50, sd = 20), digits = 2)))]
+dim(sim.dat)
+```
+
+```{r}
+exp.results <- sim.dat[, analyze.experiment(the.dat = .SD),
+    keyby = "Experiment"]
+
+DT::datatable(data = round(x = exp.results[1:500, ], digits = 3),
+    rownames = F)
+```
+
+```{r}
+exp.results[, mean(p < 0.05)]
+exp.results[, summary(effect)]
+```
+
+```{r}
+alpha = 0.05
+exp.results[, quantile(x = effect, probs = c(alpha/2, 1 -
+    alpha/2))]
+```
+
+```{r}
+alpha <- 0.05
+
+exp.results[, classification := ifelse(p < alpha, "Significant", "Not Significant")]
+
+conf_matrix <- table(exp.results$classification, exp.results$effect > 10)
+
+TP <- conf_matrix[4]
+TN <- conf_matrix[1]
+FP <- conf_matrix[3]
+FN <- conf_matrix[2]
+
+TPR <- TP / (TP + FN)  # True Positive Rate 
+TNR <- TN / (TN + FP)  # True Negative Rate 
+FPR <- FP / (FP + TN)  # False Positive Rate
+FNR <- FN / (TP + FN)  # False Negative Rate
+
+TPR
+TNR
+FPR
+FNR
+```
+
+Scenario 2 of Research Question 1 analyzes the impact of high versus low restaurant ratings on the likelihood of customer visits. 60 samples per group. Comparing the two groups through a head test, an effect value of 7.42 was observed with a p-value of 0.15. The results indicate that highly rated restaurants have a higher likelihood of visiting. In an extensive simulation of 1000 experiments, 95.8% had a mean p-value below 0.05 with varying effect sizes. The actual positive rate was 99. 9%, while the false positive rate was about 21.4%. This suggests that the simulation is very good at detecting when there is a significant effect. Thus, while individual experiments like this first one did not show effective results, a combined analysis of many simulations suggests that high restaurant ratings have a strong, statistically significant effect on increasing the likelihood of patronage.
+
+
+
+### Research Question 2: Do positive online reviews of the restaurant’s food, compared to no review, increase a customer’s visitation score?
+
+#### Scenario 1:  No Effect
+
+
+##### Simulation
+
+```{r q2_scenario1_simulation}
+n <- 60
+library(data.table)
+library(DT)
+library(rstatix)
+set.seed(1032)
+
+effect_size <- 0
+
+data <- data.table(Group = sample(x = c("Positive Food Review", "No Review"), size = n, replace = T))
+
+data[Group == "Positive Food Review", likelihood_to_visit := pmax(1, pmin(100, round(rnorm(n = .N, mean = 50 + effect_size, sd = 20), digits = 2)))]
+data[Group == "No Review", likelihood_to_visit := pmax(1, pmin(100, round(rnorm(n = .N, mean = 50, sd = 20), digits = 2)))]
+
+datatable(data = data)
+```
+
+##### Analysis
+
+
+
+```{r q2_scenario1_analysis}
+analyze.experiment <- function(the.dat) {
+    require(data.table)
+    setDT(the.dat)
+
+    the.test <- t.test(x = the.dat[Group == "Positive Food Review",likelihood_to_visit], y = the.dat[Group == "No Review", likelihood_to_visit])
+    
+    the.effect <- the.test$estimate[1] - the.test$estimate[2]
+    p <- the.test$p.value
+
+    result <- data.table(effect = the.effect, p = p)
+
+    return(result)
+}
+analyze.experiment(the.dat = data)
+```
+
+
+```{r}
+B <- 1000
+n <- 60
+RNGversion(vstr = 3.6)
+set.seed(seed = 1032)
+Experiment <- 1:B
+Group <- sample(x = c("Positive Food Review", "No Review"), size = n, replace = T)
+
+sim.dat <- as.data.table(expand.grid(Experiment = Experiment, Group = Group))
+setorderv(x = sim.dat, cols = c("Experiment", "Group"), order = c(1,1))
+sim.dat[Group == "Positive Food Review", likelihood_to_visit := pmax(1, pmin(100, round(rnorm(n = .N, mean = 50 + effect_size, sd = 20), digits = 2)))]
+sim.dat[Group == "No Review", likelihood_to_visit := pmax(1, pmin(100, round(rnorm(n = .N, mean = 50, sd = 20), digits = 2)))]
+dim(sim.dat)
+```
+
+```{r}
+exp.results <- sim.dat[, analyze.experiment(the.dat = .SD),
+    keyby = "Experiment"]
+
+DT::datatable(data = round(x = exp.results[1:500, ], digits = 3),
+    rownames = F)
+
+```
+
+```{r}
+exp.results[, mean(p < 0.05)]
+exp.results[, summary(effect)]
+```
+
+
+```{r}
+alpha = 0.05
+exp.results[, quantile(x = effect, probs = c(alpha/2, 1 -
+    alpha/2))]
+```
+
+```{r}
+alpha <- 0.05
+
+exp.results[, classification := ifelse(p < alpha, "Significant", "Not Significant")]
+
+conf_matrix <- table(exp.results$classification, abs(exp.results$effect) > 11)
+
+TP <- conf_matrix[4]
+TN <- conf_matrix[1]
+FP <- conf_matrix[3]
+FN <- conf_matrix[2]
+
+TPR <- TP / (TP + FN)  # True Positive Rate 
+TNR <- TN / (TN + FP)  # True Negative Rate 
+FPR <- FP / (FP + TN)  # False Positive Rate
+FNR <- FN / (TP + FN)  # False Negative Rate
+
+TPR
+TNR
+FPR
+FNR
+```
+
+ We simulated the impact of positive online food reviews versus no reviews on customers' decisions to visit restaurants, under the assumption of 'No Effect'. Using R, we generated a dataset for 60 participants, randomly assigned to either the "Positive Food Review" or "No Review" groups. The primary measure was the 'likelihood_to_visit' score, ranging from 1 to 100, intended to reflect the participants' intentions to visit a restaurant. These scores were drawn from a normal distribution with a mean of 50 and a standard deviation of 20, representing a realistic variation in customer preferences.
+To analyze the data, we employed an independent sample t-test, comparing the mean likelihood to visit scores between the two groups. The effect size was set to zero, aligning with the 'No Effect' scenario, meaning any observed differences would be attributable to chance. Furthermore, we enhanced the robustness of our findings by conducting 1000 simulations, each replicating the experiment to assess the consistency of results. This comprehensive approach allowed us to calculate error rates, including true positive, true negative, false positive, and false negative rates, providing insight into the reliability of our experimental design and statistical analysis. Through this simulated experiment, we aimed to understand the potential influence (or lack thereof) of online food reviews on customer visitation intentions, under controlled conditions.
+
+
+
+
+#### Scenario 2:  An Expected Effect
+
+##### Simulation
+
+```{r}
+n <- 60
+library(data.table)
+library(DT)
+library(rstatix)
+set.seed(1032)
+
+effect_size <- 16
+
+data <- data.table(Group = sample(x = c("Positive Food Review", "No Review"), size = n, replace = T))
+
+data[Group == "Positive Food Review", likelihood_to_visit := pmax(1, pmin(100, round(rnorm(n = .N, mean = 50 + effect_size, sd = 20), digits = 2)))]
+data[Group == "No Review", likelihood_to_visit := pmax(1, pmin(100, round(rnorm(n = .N, mean = 50, sd = 20), digits = 2)))]
+
+datatable(data = data)
+```
+
+##### Analysis
+
+
+```{r}
+analyze.experiment <- function(the.dat) {
+    require(data.table)
+    setDT(the.dat)
+
+    the.test <- t.test(x = the.dat[Group == "Positive Food Review",likelihood_to_visit], y = the.dat[Group == "No Review", likelihood_to_visit])
+    
+    the.effect <- the.test$estimate[1] - the.test$estimate[2]
+    p <- the.test$p.value
+
+    result <- data.table(effect = the.effect, p = p)
+
+    return(result)
+}
+analyze.experiment(the.dat = data)
+```
+
+
+```{r}
+B <- 1000
+n <- 60
+RNGversion(vstr = 3.6)
+set.seed(seed = 1032)
+Experiment <- 1:B
+Group <- sample(x = c("Positive Food Review", "No Review"), size = n, replace = T)
+
+sim.dat <- as.data.table(expand.grid(Experiment = Experiment, Group = Group))
+setorderv(x = sim.dat, cols = c("Experiment", "Group"), order = c(1,1))
+sim.dat[Group == "Positive Food Review", likelihood_to_visit := pmax(1, pmin(100, round(rnorm(n = .N, mean = 50 + effect_size, sd = 20), digits = 2)))]
+sim.dat[Group == "No Review", likelihood_to_visit := pmax(1, pmin(100, round(rnorm(n = .N, mean = 50, sd = 20), digits = 2)))]
+dim(sim.dat)
+```
+
+
+```{r}
+exp.results <- sim.dat[, analyze.experiment(the.dat = .SD),
+    keyby = "Experiment"]
+
+DT::datatable(data = round(x = exp.results[1:500, ], digits = 3),
+    rownames = F)
+```
+
+
+```{r}
+exp.results[, mean(p < 0.05)]
+exp.results[, summary(effect)]
+```
+
+
+```{r}
+alpha = 0.05
+exp.results[, quantile(x = effect, probs = c(alpha/2, 1 -
+    alpha/2))]
+```
+
+```{r}
+alpha <- 0.05
+
+exp.results[, classification := ifelse(p < alpha, "Significant", "Not Significant")]
+
+conf_matrix <- table(exp.results$classification, exp.results$effect > 8)
+
+TP <- conf_matrix[4]
+TN <- conf_matrix[1]
+FP <- conf_matrix[3]
+FN <- conf_matrix[2]
+
+TPR <- TP / (TP + FN)  # True Positive Rate 
+TNR <- TN / (TN + FP)  # True Negative Rate 
+FPR <- FP / (FP + TN)  # False Positive Rate
+FNR <- FN / (TP + FN)  # False Negative Rate
+
+TPR
+TNR
+FPR
+FNR
+```
+
+In Scenario 2 of our research on the influence of favorable online meal reviews, we ran a simulation to see if there was a substantial effect on customers' likelihood to visit restaurants. Using R, we generated data for 60 participants, who were divided into two groups: those who received a "Positive Food Review" and those who did not. We used a 16-point effect size to approximate the predicted impact of positive evaluations on visiting intent.
+Each group received a 'likelihood_to_visit' score ranging from 1 to 100. The "Positive Food Review" group's scores were dispersed around a higher mean of 66, demonstrating the beneficial influence of reviews, whereas the "No Review" group's scores were distributed around a mean of 50. To simulate realistic heterogeneity in customer preferences, we kept the standard deviation for both groups at 20.
+An independent samples t-test was used in our analysis to compare the mean scores of the two groups across 1000 simulations. We were able to examine the consistency of the effect and calculate error rates such as the true positive and false negative rates using this method. The purpose was to see if there was a substantial shift in visiting intentions due to positive food evaluations, offering insight into the potential impact of online consumer feedback in changing restaurant patronage.
+
+
+### Research Question 3: Does the presence of high-quality food images, compared to no images, increase a customer’s visitation score?
+
+#### Scenario 1: No Effect
+
+##### Simulation
+
+```{r q3_scenario1_simulation}
+n <- 60
+library(data.table)
+library(DT)
+library(rstatix)
+set.seed(1034)
+
+effect_size <- 0
+
+data <- data.table(Group = sample(x = c("Food Pictures", "No Picture"), size = n, replace = T))
+
+data[Group == "Food Pictures", likelihood_to_visit := pmax(1, pmin(100, round(rnorm(n = .N, mean = 50 + effect_size, sd = 20), digits = 2)))]
+data[Group == "No Picture", likelihood_to_visit := pmax(1, pmin(100, round(rnorm(n = .N, mean = 50, sd = 20), digits = 2)))]
+
+datatable(data = data)
+```
+
+##### Analysis
+
+
+
+```{r q3_scenario1_analysis}
+analyze.experiment <- function(the.dat) {
+    require(data.table)
+    setDT(the.dat)
+
+    the.test <- t.test(x = the.dat[Group == "Food Pictures",likelihood_to_visit], y = the.dat[Group == "No Picture", likelihood_to_visit], alternative = 'greater')
+    
+    the.effect <- the.test$estimate[1] - the.test$estimate[2]
+    p <- the.test$p.value
+
+    result <- data.table(effect = the.effect, p = p)
+
+    return(result)
+}
+analyze.experiment(the.dat = data)
+```
+
+
+```{r}
+B <- 1000
+n <- 60
+RNGversion(vstr = 3.6)
+set.seed(seed = 1034)
+Experiment <- 1:B
+Group <- sample(x = c("Food Pictures", "No Picture"), size = n, replace = T)
+
+sim.dat <- as.data.table(expand.grid(Experiment = Experiment, Group = Group))
+setorderv(x = sim.dat, cols = c("Experiment", "Group"), order = c(1,1))
+sim.dat[Group == "Food Pictures", likelihood_to_visit := pmax(1, pmin(100, round(rnorm(n = .N, mean = 50 + effect_size, sd = 20), digits = 2)))]
+sim.dat[Group == "No Picture", likelihood_to_visit := pmax(1, pmin(100, round(rnorm(n = .N, mean = 50, sd = 20), digits = 2)))]
+dim(sim.dat)
+```
+
+```{r}
+exp.results <- sim.dat[, analyze.experiment(the.dat = .SD),
+    keyby = "Experiment"]
+
+DT::datatable(data = round(x = exp.results[1:500, ], digits = 3),
+    rownames = F)
+
+```
+
+```{r}
+exp.results[, mean(p < 0.05)]
+exp.results[, summary(effect)]
+```
+
+
+```{r}
+alpha = 0.05
+exp.results[, quantile(x = effect, probs = c(alpha/2, 1 -
+    alpha/2))]
+```
+
+```{r}
+alpha <- 0.05
+
+exp.results[, classification := ifelse(p < alpha, "Significant", "Not Significant")]
+
+conf_matrix <- table(exp.results$classification, abs(exp.results$effect > 10))
+
+TP <- conf_matrix[4]
+TN <- conf_matrix[1]
+FP <- conf_matrix[3]
+FN <- conf_matrix[2]
+
+TPR <- TP / (TP + FN)  # True Positive Rate 
+TNR <- TN / (TN + FP)  # True Negative Rate 
+FPR <- FP / (FP + TN)  # False Positive Rate
+FNR <- FN / (TP + FN)  # False Negative Rate
+
+TPR
+TNR
+FPR
+FNR
+```
+
+We simulated the impact of the presence of food pictures versus no pictures on customers' decisions to visit restaurants, under the assumption of 'No Effect'. Using R, we generated a dataset for 60 participants, randomly assigned to either the "Food Picture" or "No Picture" groups. The primary measure was the 'likelihood_to_visit' score, ranging from 1 to 100, intended to reflect the participants' intentions to visit a restaurant. These scores were drawn from a normal distribution with a mean of 50 and a standard deviation of 20, representing a realistic variation in customer preferences.
+To analyze the data, we employed an independent sample t-test, comparing the mean likelihood to visit scores between the two groups. The effect size was set to zero, aligning with the 'No Effect' scenario, meaning any observed differences would be attributable to chance. Furthermore, we enhanced the robustness of our findings by conducting 1000 simulations, each replicating the experiment to assess the consistency of results. This comprehensive approach allowed us to calculate error rates, including true positive, true negative, false positive, and false negative rates, providing insight into the reliability of our experimental design and statistical analysis. Through this simulated experiment, we aimed to understand the potential influence (or lack thereof) of online food reviews on customer visitation intentions, under controlled conditions.
+
+#### Scenario 2:  An Expected Effect
+
+##### Simulation
+
+```{r}
+n <- 60
+library(data.table)
+library(DT)
+library(rstatix)
+set.seed(1034)
+
+effect_size <- 20
+
+data <- data.table(Group = sample(x = c("Food Pictures", "No Picture"), size = n, replace = T))
+
+data[Group == "Food Pictures", likelihood_to_visit := pmax(1, pmin(100, round(rnorm(n = .N, mean = 50 + effect_size, sd = 20), digits = 2)))]
+data[Group == "No Picture", likelihood_to_visit := pmax(1, pmin(100, round(rnorm(n = .N, mean = 50, sd = 20), digits = 2)))]
+
+datatable(data = data)
+
+```
+
+##### Analysis
+
+
+
+```{r}
+analyze.experiment <- function(the.dat) {
+    require(data.table)
+    setDT(the.dat)
+
+    the.test <- t.test(x = the.dat[Group == "Food Pictures",likelihood_to_visit], y = the.dat[Group == "No Picture", likelihood_to_visit], alternative = 'greater')
+    
+    the.effect <- the.test$estimate[1] - the.test$estimate[2]
+    p <- the.test$p.value
+
+    result <- data.table(effect = the.effect, p = p)
+
+    return(result)
+}
+analyze.experiment(the.dat = data)
+```
+
+
+```{r}
+B <- 1000
+n <- 60
+RNGversion(vstr = 3.6)
+set.seed(seed = 1034)
+Experiment <- 1:B
+Group <- sample(x = c("Food Pictures", "No Picture"), size = n, replace = T)
+
+sim.dat <- as.data.table(expand.grid(Experiment = Experiment, Group = Group))
+setorderv(x = sim.dat, cols = c("Experiment", "Group"), order = c(1,1))
+sim.dat[Group == "Food Pictures", likelihood_to_visit := pmax(1, pmin(100, round(rnorm(n = .N, mean = 50 + effect_size, sd = 20), digits = 2)))]
+sim.dat[Group == "No Picture", likelihood_to_visit := pmax(1, pmin(100, round(rnorm(n = .N, mean = 50, sd = 20), digits = 2)))]
+dim(sim.dat)
+```
+
+
+```{r}
+exp.results <- sim.dat[, analyze.experiment(the.dat = .SD),
+    keyby = "Experiment"]
+
+DT::datatable(data = round(x = exp.results[1:500, ], digits = 3),
+    rownames = F)
+
+```
+
+```{r}
+exp.results[, mean(p < 0.05)]
+exp.results[, summary(effect)]
+```
+
+
+```{r}
+alpha = 0.05
+exp.results[, quantile(x = effect, probs = c(alpha/2, 1 -
+    alpha/2))]
+```
+
+```{r}
+
+alpha <- 0.05
+
+exp.results[, classification := ifelse(p < alpha, "Significant", "Not Significant")]
+
+conf_matrix <- table(exp.results$classification, exp.results$effect > 9)
+
+TP <- conf_matrix[4]
+TN <- conf_matrix[1]
+FP <- conf_matrix[3]
+FN <- conf_matrix[2]
+
+TPR <- TP / (TP + FN)  # True Positive Rate
+TNR <- TN / (TN + FP)  # True Negative Rate 
+FPR <- FP / (FP + TN)  # False Positive Rate
+FNR <- FN / (TP + FN)  # False Negative Rate
+
+TPR
+TNR
+FPR
+FNR
+```
+
+Our simulation investigated the expected considerable impact of high-quality food photographs on customers' decision to visit restaurants in Scenario 2 of Research Question 3. We generated data for 60 participants using R, who were divided into two groups: "Food Pictures" and "No Picture." The goal was to see how visually appealing food imagery influenced client visiting intentions.
+The simulation used a 20-point effect size, assuming that the appearance of food photographs would significantly boost the likelihood of restaurant visiting. Each member of the "Food Pictures" group received a 'likelihood_to_visit' score generated from a normal distribution with a mean of 70 (50 + 20 effect size) and a standard deviation of 20, indicating increased interest as a result of the photographs. The "No Picture" group received ratings averaging approximately 50, demonstrating typical visitation intent in the absence of these visuals.
+After that, the data was examined using an independent samples t-test to compare the visitation scores of the two groups. The purpose of this study was to see if including food images changed client decisions notably. We ran 1000 simulations to ensure the robustness of our findings, duplicating the experimental setting and examining the consistency of the observed effect.
+We attempted to quantify the potential power of high-quality food photography in online restaurant evaluations using this method. This included calculating error rates such as the true positive and false negative rates, which gave insights into the experiment's reliability and the possibility of correctly determining the impact of food imagery on customer behavior. The simulation provided a thorough examination of the possible impact of visual aspects in online evaluations, providing significant insights into viable techniques for increasing restaurant attractiveness and patronage.
+
+
+#### Table of Result 
+```{r}
+research_data <- data.frame(
+  Research_Question = c("Q1", "Q1", "Q2", "Q2", "Q3", "Q3"),
+  Scenario = c("No Effect", "Effect: (20)", "No Effect", "Effect: (15)", "No Effect", "Effect: (20)"),
+  Mean_Effect = c(-0.045, 19.381, -0.201, 15.440, -0.165, 19.253),
+  CI_Mean_Effect = c(-0.297, 19.154, -0.106, 15.407, 0.484, 19.835),
+  FP_Percentage = c(0.955, NA, 0.209, NA, 0.318, NA),
+  TN_Percentage = c(99.045, NA, 99.791, NA, 99.682, NA),
+  FN_Percentage = c(NA, 0.104, NA, 0.441, NA, 0.203),
+  TP_Percentage = c(NA, 99.896, NA, 99.559, NA, 99.797)
+)
+
+research_data$CI_Mean_Effect <- paste0(format(research_data$CI_Mean_Effect, digits = 3), "%")
+research_data$FP_Percentage <- paste0(format(research_data$FP_Percentage, digits = 3), "%")
+research_data$TN_Percentage <- paste0(format(research_data$TN_Percentage, digits = 3), "%")
+research_data$FN_Percentage <- paste0(format(research_data$FN_Percentage, digits = 3), "%")
+research_data$TP_Percentage <- paste0(format(research_data$TP_Percentage, digits = 3), "%")
+print(research_data)
+```
+
+
+## References
+
+Aureliano-Silva, L., Leung, X., &amp; Spers, E. E. (2021). The effect of online reviews on restaurant visit intentions: Applying signaling and involvement theories. Journal of Hospitality and Tourism Technology, 12(4), 672–688. https://doi.org/10.1108/jhtt-06-2020-0143
+
+Luca, M. (2011). Reviews, reputation, and revenue: the case of Yelp.Com. Social Science Research Network. https://doi.org/10.2139/ssrn.1928601
+
+
+
