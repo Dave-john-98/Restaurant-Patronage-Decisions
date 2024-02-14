@@ -1,0 +1,3 @@
+The Impact of Online Customer Reviews on Restaurant Patronage Decisions
+
+This project delves into the significant influence of online customer reviews on the dining choices of individuals. Utilizing a combination of data scraping, natural language processing, and sentiment analysis, we examined thousands of restaurant reviews to uncover patterns. The insights derived not only reveal how positive or negative sentiments in reviews affect restaurant popularity but also provide a framework for understanding consumer behavior in the digital age. This analysis is pivotal for restaurant owners and marketers aiming to strategize based on customer feedback.
